@@ -62,7 +62,7 @@ final class ScannerVC: UIViewController {
         }
         
         if captureSession.canAddInput(videoInput) {
-            captureSession.canAddInput(videoInput)
+            captureSession.addInput(videoInput)
         } else {
             scannerDelegate.didSurface(error: .invalidDeviceInput)
             return
@@ -73,6 +73,9 @@ final class ScannerVC: UIViewController {
             captureSession.addOutput(metaDataOutput)
             metaDataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             metaDataOutput.metadataObjectTypes = [.ean8, .ean13]
+        } else {
+            scannerDelegate?.didSurface(error: .invalidDeviceInput)
+            return
         }
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)

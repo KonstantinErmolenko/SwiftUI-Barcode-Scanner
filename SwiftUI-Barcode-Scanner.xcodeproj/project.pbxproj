@@ -12,6 +12,7 @@
 		A96195B625B3074600A33D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96195B525B3074600A33D8E /* Assets.xcassets */; };
 		A96195B925B3074600A33D8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A96195B825B3074600A33D8E /* Preview Assets.xcassets */; };
 		A96195C325B3100B00A33D8E /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96195C225B3100B00A33D8E /* ScannerVC.swift */; };
+		A96195C625B31FC200A33D8E /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96195C525B31FC200A33D8E /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A96195B825B3074600A33D8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A96195BA25B3074600A33D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A96195C225B3100B00A33D8E /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		A96195C525B31FC200A33D8E /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A96195B125B3074500A33D8E /* SwiftUI_Barcode_ScannerApp.swift */,
 				A96195B325B3074500A33D8E /* BarcodeScannerView.swift */,
+				A96195C525B31FC200A33D8E /* ScannerView.swift */,
 				A96195C225B3100B00A33D8E /* ScannerVC.swift */,
 				A96195B525B3074600A33D8E /* Assets.xcassets */,
 				A96195BA25B3074600A33D8E /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96195C325B3100B00A33D8E /* ScannerVC.swift in Sources */,
+				A96195C625B31FC200A33D8E /* ScannerView.swift in Sources */,
 				A96195B425B3074500A33D8E /* BarcodeScannerView.swift in Sources */,
 				A96195B225B3074500A33D8E /* SwiftUI_Barcode_ScannerApp.swift in Sources */,
 			);
