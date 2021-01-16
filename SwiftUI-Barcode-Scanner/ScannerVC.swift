@@ -32,7 +32,7 @@ final class ScannerVC: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCaptureSession()
@@ -87,7 +87,7 @@ final class ScannerVC: UIViewController {
 }
 
 extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
-
+    
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         guard let object = metadataObjects.first else {
             scannerDelegate.didSurface(error: .invalidScannedValue)
@@ -101,7 +101,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
         
         guard let barcode = machineReadableObject.stringValue else {
             scannerDelegate.didSurface(error: .invalidScannedValue)
-             return
+            return
         }
         
         scannerDelegate.didFind(barcode: barcode)
